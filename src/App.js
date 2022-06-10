@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  </head>
-  <body>
+import logo from './logo.svg';
+import './App.css';
 
-    <div id="mydiv"></div>
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
-    <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World!</h1>;
-      }
-      
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
-    </script>
-
-  </body>
-</html>
+export default App;
